@@ -1,0 +1,100 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    background: #dae6ff;
+}
+
+nav{
+    background: #131254;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    padding: 10px 20px;
+    filter: drop-shadow(0 10px 30px #221ce6);
+}
+
+nav .nav-logo{
+    width: auto;
+    height: 165px;
+    margin-top: -50px;
+    margin-bottom: -50px;
+}
+
+nav .links{
+    display: flex;
+    justify-content: space-around;
+}
+
+nav .links li{
+    position: relative; /* Añade posición relativa para que el borde se posicione correctamente */
+    border-bottom: 2px solid transparent;
+    transition: width 0.55s; /* Cambia la transición para afectar solo el ancho */
+    margin-right: 50px;
+    list-style: none;
+}
+
+nav .links li::after {
+    content: ""; /* Añade un pseudo-elemento para crear el borde */
+    position: absolute; /* Posición absoluta para controlar el borde */
+    bottom: 0; /* Alinea el borde en la parte inferior */
+    left: 0; /* Alinea el borde a la izquierda */
+    width: 0; /* Inicialmente, el ancho es cero */
+    border-bottom: 2px solid #ebf1ff; /* Color del borde */
+    transition: width 0.55s; /* Transición para el ancho */
+}
+
+nav .links li:hover::after {
+    width: 100%; /* Cuando se pasa el cursor, el borde se expande completamente */
+}
+
+nav .links a{
+    text-decoration: none;
+    color: #ebf1ff;
+}
+
+.presentation{
+    margin-top: 70px;
+    display: flex;
+}
+
+.title{
+    border: 2px solid transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    margin: 13rem 0rem 50px 20rem;
+    padding: 20px 25px 20px 20px;
+}
+
+.title .greet .hi{
+    font-size: 70px;
+    margin-bottom: -25px;
+}
+
+.title .greet .name{
+    font-size: 70px;
+    margin-bottom: 10px;
+}
+
+.title .greet .name span{
+    color: #1e1f91;
+    font-weight: 800;
+    font-size: 80px;
+}
+
+.image{
+    border: 2px solid transparent;
+    margin: 12rem 23rem 0 0;
+}
+
+.image img{
+    width: auto;
+    height: 350px;
+}

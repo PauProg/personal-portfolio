@@ -1,0 +1,173 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    background: #dae6ff;
+}
+
+/*Nav-bar*/
+
+nav{
+    background: #131254;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    padding: 10px 20px;
+    filter: drop-shadow(0 10px 30px #221ce6);
+}
+
+nav .nav-logo{
+    width: auto;
+    height: 165px;
+    margin-top: -50px;
+    margin-bottom: -50px;
+}
+
+nav .links{
+    display: flex;
+    justify-content: space-around;
+}
+
+nav .links li{
+    position: relative; /* Añade posición relativa para que el borde se posicione correctamente */
+    border-bottom: 2px solid transparent;
+    transition: width 0.55s; /* Cambia la transición para afectar solo el ancho */
+    margin-right: 50px;
+    list-style: none;
+}
+
+nav .links li::after {
+    content: ""; /* Añade un pseudo-elemento para crear el borde */
+    position: absolute; /* Posición absoluta para controlar el borde */
+    bottom: 0; /* Alinea el borde en la parte inferior */
+    left: 0; /* Alinea el borde a la izquierda */
+    width: 0; /* Inicialmente, el ancho es cero */
+    border-bottom: 2px solid #ebf1ff; /* Color del borde */
+    transition: width 0.55s; /* Transición para el ancho */
+}
+
+nav .links li:hover::after {
+    width: 100%; /* Cuando se pasa el cursor, el borde se expande completamente */
+}
+
+nav .links a{
+    text-decoration: none;
+    color: #ebf1ff;
+}
+
+/*Project*/
+
+h1{
+    text-align: center;
+    margin: 3rem 0 3rem 0;
+    font-size: 50px;
+    color: #1e1f91;
+}
+
+.project-block{
+    display: flex;
+    background: #BCCFFF;
+    margin: 0 15rem 3rem 15rem;
+    border-radius: 10px;
+    filter: drop-shadow(0 15px 20px #131254);
+    transition: all ease .55s;
+}
+
+.project-block:hover{
+    transform: translateY(-10px);
+}
+
+.project-block .project-explanation{
+    margin-top: 30px;
+}
+
+.project-block img{
+    width: auto;
+    height: 300px;
+}
+
+.project-block h1{
+    text-align: left;
+    margin-bottom: -5px;
+    color: #131254;
+    margin-top: 10px;
+}
+
+.project-block p{
+    font-size: 19px;
+}
+
+.project-block a{
+    color: black;
+    transition: all ease .55s;
+}
+
+.project-block a:hover{
+    color: #1e1f91;
+}
+
+.project-block i{
+    margin-top: 10px;
+    font-size: 35px;
+}
+
+/*Batman block*/
+
+.batman-block{
+    display: flex;
+    background: #BCCFFF;  
+    margin: 0px 15rem 3rem 15rem;
+    border-radius: 10px;
+    filter: drop-shadow(0 15px 20px #131254);
+    transition: all ease .55s;
+}
+
+.batman-block:hover{
+    transform: translateY(-10px);
+}
+
+.batman-block .bmac{
+    width: auto;
+    height: 230px;
+    margin: 5px 0 0 -35px;
+}
+
+.batman-block .bipad{
+    width: auto;
+    height: 170px;
+    margin: 120px 0 20px -130px;
+}
+
+.batman-block h1{
+    text-align: left;
+    margin-bottom: -5px;
+    color: #131254;
+    margin-top: 10px;
+}
+
+.batman-block p{
+    font-size: 19px;
+}
+
+.batman-block a{
+    color: black;
+    transition: all ease .55s;
+}
+
+.batman-block a:hover{
+    color: #1e1f91;
+}
+
+.batman-block i{
+    margin-top: 10px;
+    font-size: 35px;
+}
+
+.batman-block .batman-explanation{
+    margin-top: 30px;
+}

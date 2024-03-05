@@ -1,0 +1,144 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    background: #dae6ff;
+}
+
+nav{
+    background: #131254;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    padding: 10px 20px;
+    filter: drop-shadow(0 10px 30px #221ce6);
+}
+
+nav .nav-logo{
+    width: auto;
+    height: 165px;
+    margin-top: -50px;
+    margin-bottom: -50px;
+}
+
+nav .links{
+    display: flex;
+    justify-content: space-around;
+}
+
+nav .links li{
+    position: relative; /* Añade posición relativa para que el borde se posicione correctamente */
+    border-bottom: 2px solid transparent;
+    transition: width 0.55s; /* Cambia la transición para afectar solo el ancho */
+    margin-right: 50px;
+    list-style: none;
+}
+
+nav .links li::after {
+    content: ""; /* Añade un pseudo-elemento para crear el borde */
+    position: absolute; /* Posición absoluta para controlar el borde */
+    bottom: 0; /* Alinea el borde en la parte inferior */
+    left: 0; /* Alinea el borde a la izquierda */
+    width: 0; /* Inicialmente, el ancho es cero */
+    border-bottom: 2px solid #ebf1ff; /* Color del borde */
+    transition: width 0.55s; /* Transición para el ancho */
+}
+
+nav .links li:hover::after {
+    width: 100%; /* Cuando se pasa el cursor, el borde se expande completamente */
+}
+
+nav .links a{
+    text-decoration: none;
+    color: #ebf1ff;
+}
+
+.container{
+    background: #BCCFFF;
+    width: 90%;
+    margin: auto;
+    max-width: 400px;
+    border-radius: 10px;
+    padding: 20px 10px;
+    margin-top: 13rem;
+    display: grid;
+    gap: 1em;
+    text-align: center;
+    filter: drop-shadow(0 15px 15px #131254);
+    transition: all linear .55s;
+}
+
+.container:hover{
+    transform: translateY(-10px);
+}
+
+.container h1{
+    text-align: center;
+    font-size: 50px;
+    color: #1e1f91;
+    width: 100%;
+}
+
+.gap{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+#name{
+    background: #94aeff;
+    border: none;
+    border-radius: 10px;
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+}
+
+#email{
+    background: #94aeff;
+    border: none;
+    border-radius: 10px;
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+}
+
+#phone{
+    background: #94aeff;
+    border: none;
+    border-radius: 10px;
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+}
+
+#message{
+    background: #94aeff;
+    border: none;
+    border-radius: 10px;
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+}
+
+.container button{
+    padding: 5px 15px;
+    margin-top: 20px;
+    border: none;
+    background: #4854ff;
+    color: white;
+    border-radius: 10px;
+    font-size: 15px;
+    transition: all ease .55s;
+}
+
+.container button:hover{
+    background: #2b28ff;
+    transform: scale(1.1);
+    transform: translateY(-5px);
+}
