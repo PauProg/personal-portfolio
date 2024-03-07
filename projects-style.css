@@ -9,6 +9,7 @@ body{
     background: #dae6ff;
 }
 
+
 /*Nav-bar*/
 
 nav{
@@ -59,6 +60,7 @@ nav .links a{
     text-decoration: none;
     color: #ebf1ff;
 }
+
 
 /*Project*/
 
@@ -117,6 +119,7 @@ h1{
     font-size: 35px;
 }
 
+
 /*Batman block*/
 
 .batman-block{
@@ -170,6 +173,128 @@ h1{
     font-size: 35px;
 }
 
+.batman-block .batman-explanation{
+    margin-top: 30px;
+}
+
+
+/*Responsive*/
+
+@media (max-width: 1569px) {
+    .project-block .project-explanation h1{
+        font-size: 35px;
+        margin-top: -5px;
+    }
+
+    .batman-block .batman-explanation h1{
+        font-size: 35px;
+        margin-top: -5px;
+    }
+
+    .project-explanation{
+        padding-top: 20px;
+        padding-right: 15px;
+    }
+
+    .batman-explanation{
+        padding-top: 20px;
+        padding-right: 15px;
+    }
+
+    .project-block p{
+        font-size: 17px;
+        margin-right: 20px;
+    }
+
+    .batman-block p{
+        font-size: 17px;
+        margin-right: 20px;
+    }
+
+    .project-block i{
+        margin-top: 5px;
+        font-size: 30px;
+    }
+
+    .batman-block i{
+        margin-top: 5px;
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 1455px) {
+    .project-block{
+        margin: 0 5rem 3rem 5rem;
+    }
+
+    .batman-block{
+        margin: 0 5rem 3rem 5rem;
+    }
+}
+
+@media (max-width: 1133px) {
+    .project-block{
+        margin: 0 2rem 3rem 2rem;
+    }
+
+    .batman-block{
+        margin: 0 2rem 3rem 2rem;
+    }
+}
+
+@media (max-width: 1031px) {
+    .project-block{
+        display: block;
+    }
+
+    .batman-block{
+        display: block;
+    }
+
+    .project-explanation{
+        margin: 10px 5rem 0 5rem;
+    }
+
+    .batman-explanation{
+        margin: 10px 5rem 0 5rem;
+    }
+
+    .project-block i{
+        margin-bottom: 40px;
+    }
+
+    .batman-block i{
+        margin-bottom: 40px;
+    }
+
+    .project-block img{
+        margin-top: 100px;
+        display: flex;
+        justify-content: center;
+        margin: auto;
+        width: auto;
+        height: 270px;
+    }
+
+    .batman-block .bipad{
+        display: none;
+    }
+
+    .batman-block .bmac{
+        margin-top: 100px;
+        display: flex;
+        justify-content: center;
+        margin: auto;
+        width: auto;
+        height: 270px;
+    }
+}
+
+@media (max-width: 710px) {
+    nav .links{
+        display: none;
+    }
+}
 .batman-block .batman-explanation{
     margin-top: 30px;
 }
