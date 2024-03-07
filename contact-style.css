@@ -69,12 +69,13 @@ nav .links a{
     display: grid;
     gap: 1em;
     text-align: center;
-    filter: drop-shadow(0 15px 15px #131254);
     transition: all linear .55s;
+    filter: drop-shadow(0 0 15px #131254);
 }
 
 .container:hover{
     transform: translateY(-10px);
+    filter: drop-shadow(0 30px 30px #131254);
 }
 
 .container h1{
