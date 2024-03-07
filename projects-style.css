@@ -295,6 +295,55 @@ h1{
         display: none;
     }
 }
-.batman-block .batman-explanation{
-    margin-top: 30px;
+
+@media (max-width: 522px) {
+    .project-block img{
+        height: 150px;
+        padding-top: 10px;
+        margin-bottom: -50px;
+    }
+
+    .batman-block .bmac{
+        height: 150px;
+        padding-top: 10px;
+        margin-bottom: -50px;
+    }
+
+    .project-block .project-explanation h1{
+        font-size: 20px;
+        margin-top: -5px;
+    }
+
+    .batman-block .batman-explanation h1{
+        font-size: 20px;
+        margin-top: -5px;
+    }
+
+    .project-block p{
+        font-size: 13px;
+    }
+
+    .batman-block p{
+        font-size: 13px;
+    }
+
+    .batman-block p{
+        font-size: 13px;
+    }
+
+    .project-block i{
+        font-size: 23px;
+    }
+
+    .batman-block i{
+        font-size: 23px;
+    }
+
+    .project-explanation{
+        margin: 10px 2rem 0 2rem;
+    }
+
+    .batman-explanation{
+        margin: 10px 2rem 0 2rem;
+    }
 }
