@@ -98,3 +98,79 @@ nav .links a{
     width: auto;
     height: 350px;
 }
+
+@media (max-width: 1650px) {
+    .image{
+        margin: 12rem 10rem 0 0;
+    }
+
+    .title{
+        margin: 13rem 0rem 50px 10rem;
+    }
+}
+
+@media (max-width: 1380px) {
+    .presentation{
+        display: block;
+    }
+
+    .title{
+        margin: 13rem 5rem 50px 10rem;
+    }
+
+    .image{
+        margin: 3rem 10rem 0 10rem;
+        text-align: center;
+    }
+}
+
+@media (max-width: 875px) {
+    .title{
+        margin: 13rem 5rem 50px 7rem;
+    }
+
+    .title .greet .hi{
+        font-size: 60px;
+    }
+    
+    .title .greet .name{
+        font-size: 60px;
+    }
+    
+    .title .greet .name span{
+        font-size: 60px;
+    }
+}
+
+@media (max-width: 710px) {
+    .title{
+        margin: 10px 10px 50px 10px;
+    }
+
+    .title .greet .hi{
+        font-size: 30px;
+        margin-bottom: 1px;
+    }
+    
+    .title .greet .name{
+        font-size: 30px;
+    }
+    
+    .title .greet .name span{
+        font-size: 30px;
+    }
+
+    .image{
+        margin: auto;
+        text-align: center;
+    }
+
+    .image img{
+        width: auto;
+        height: 170px;
+    }
+
+    nav .links{
+        display: none;
+    }
+}
