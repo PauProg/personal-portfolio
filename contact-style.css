@@ -143,3 +143,11 @@ nav .links a{
     transform: scale(1.1);
     transform: translateY(-5px);
 }
+
+/*Responsive*/
+
+@media (max-width: 710px) {
+    nav .links{
+        display: none;
+    }
+}
