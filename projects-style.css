@@ -297,6 +297,10 @@ h1{
 }
 
 @media (max-width: 522px) {
+    h1{
+        font-size: 28px;
+    }
+    
     .project-block img{
         height: 150px;
         padding-top: 10px;
