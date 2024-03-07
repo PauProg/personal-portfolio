@@ -9,6 +9,9 @@ body{
     background: #dae6ff;
 }
 
+
+/*Navbar*/
+
 nav{
     background: #131254;
     display: flex;
@@ -58,6 +61,9 @@ nav .links a{
     color: #ebf1ff;
 }
 
+
+/*Text and icon*/
+
 .presentation{
     margin-top: 70px;
     display: flex;
@@ -98,6 +104,9 @@ nav .links a{
     width: auto;
     height: 350px;
 }
+
+
+/*Responsive part*/
 
 @media (max-width: 1650px) {
     .image{
