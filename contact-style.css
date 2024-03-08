@@ -71,7 +71,6 @@ nav .links a{
     text-align: center;
     transition: all linear .55s;
     filter: drop-shadow(0 0 15px #131254);
-    margin-bottom: 7rem;
 }
 
 .container:hover{
