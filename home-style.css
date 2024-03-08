@@ -266,4 +266,8 @@ nav .links a{
     .navigation{
         display: flex;
     }
+
+    .presentation .image img{
+        margin-bottom: 7rem;
+    }
 }
