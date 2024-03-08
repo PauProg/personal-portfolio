@@ -170,6 +170,87 @@ nav .links a{
     margin-left: 10px;
 }
 
+/*Nav de abajo*/
+
+.navigation{
+    position: relative;
+    width: auto;
+    height: 70px;
+    background: #4854ff;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px 20px 0 0;
+    padding: 20px;
+    text-align: center;
+    position: fixed;
+    bottom: 0; 
+    width: 100%;
+}
+
+.navigation ul{
+    display: flex;
+}
+
+.navigation ul li{
+    position: relative;
+    list-style: none;
+    width: 70px;
+    height: 70px;
+    z-index: 1;
+
+}
+
+.navigation ul li a{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    font-weight: 500;
+}
+
+.navigation ul li a .icon{
+    position: relative;
+    display: block;
+    line-height: 75px;
+    font-size: 1.5em;
+    color: #dae6ff;
+    text-align: center;
+    transition: .5s;
+
+}
+
+.navigation ul li.active a .icon{
+    transform: translateY(-5px);
+    color: #4854ff;
+}
+
+.navigation ul li.active{
+    background: #dae6ff;
+    border-radius: 50%;
+}
+
+.navigation ul li a .text{
+    position: absolute;
+    color: #dae6ff;
+    font-weight: 400;
+    font-size: .75em;
+    letter-spacing: .05em;
+    transition: .5s;
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+.navigation ul li.active a .text{
+    opacity: 1;
+    transform: translateY(15px);
+    color: #4854ff;
+}
+
+
 @media (max-width: 1630px) {
     .title .greet .hi{
         font-size: 55px;
@@ -317,6 +398,14 @@ nav .links a{
 @media (max-width: 710px) {
     nav .links{
         display: none;
+    }
+
+    .navigation{
+        display: flex;
+    }
+
+    .skills{
+        margin-bottom: 8rem;
     }
 }
 
