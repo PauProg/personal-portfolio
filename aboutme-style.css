@@ -77,16 +77,16 @@ nav .links a{
     margin-bottom: -25px;
 }
 
+.title .greet .name{
+    font-size: 70px;
+    margin-bottom: 10px;
+}
+
 .presentation .title .greet h2{
     font-size: 40px;
     margin-top: -25px;
     color: transparent; /* Hacemos el color del texto transparente */
     -webkit-text-stroke: 2px #1e1bc0; /* Ancho y color del borde en navegadores webkit (Chrome, Safari) */
-}
-
-.title .greet .name{
-    font-size: 70px;
-    margin-bottom: 10px;
 }
 
 .title .greet .name span{
@@ -109,20 +109,22 @@ nav .links a{
 
 .big-block{
     background: #1e1f91;
+    /* Asegúrate de que el display sea flex y la dirección sea columna */
     display: flex;
-    flex-wrap: wrap;
-    margin: 10rem 13rem 10rem 13rem;
+    flex-direction: column; /* Esto coloca los divs uno encima del otro */
+    margin: 10rem 13rem;
     padding: 20px;
     border-radius: 10px;
     filter: drop-shadow(0 15px 15px #1e1f91);
 }
 
 .big-block > div {
-    flex: 0 1 calc(50% - 10px);
+    /* Ajustamos para que cada div tome el 100% del ancho del contenedor */
+    width: 100%; /* Esto asegura que cada bloque ocupe el ancho completo */
     padding: 10px;
     box-sizing: border-box;
     border: 2px solid transparent;
-    margin: 5px;
+    margin: 5px 0; /* Ajusta el margen para separarlos verticalmente */
 }
 
 .hobbies .big-block .block h2{
@@ -166,4 +168,204 @@ nav .links a{
 .skills ul li i{
     font-size: 20px;
     margin-left: 10px;
+}
+
+@media (max-width: 1630px) {
+    .title .greet .hi{
+        font-size: 55px;
+        margin-top: 20px;
+    }
+    
+    .title .greet .name{
+        font-size: 55px;
+        margin-bottom: 10px;
+    }
+
+    .title .greet .name span{
+        font-size: 55px;
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 1570px) {
+    .title .greet .hi{
+        font-size: 40px;
+        margin-top: 75px;
+        margin-bottom: -9px;
+    }
+    
+    .title .greet .name{
+        font-size: 40px;
+        margin-bottom: 10px;
+    }
+
+    .title .greet .name span{
+        font-size: 40px;
+        margin-bottom: 10px;
+    }
+
+    .presentation .title .greet h2{
+        font-size: 30px;
+        margin-top: -10px;
+    }
+}
+
+@media (max-width: 1482px) {
+    .image img{
+        width: auto;
+        height: 290px;
+        margin-top: 70px;
+        margin-left: auto;
+    }
+
+    .presentation{
+        margin: -175px -420px 0 -420px;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 1300px) {
+    .big-block{
+        margin: 10rem 7rem 10rem 7rem;
+    }
+}
+
+@media (max-width: 1100px) {
+    .skills ul li i{
+        display: none;
+    }
+
+    .skills{
+        margin: auto 7rem auto 7rem;
+    }
+
+    .title .greet{
+        margin-left: 60px;
+        margin-top: 20px;
+    }
+
+    .title .greet .hi{
+        font-size: 30px;
+        margin-top: 75px;
+        margin-bottom: -9px;
+    }
+    
+    .title .greet .name{
+        font-size: 30px;
+        margin-bottom: 10px;
+    }
+
+    .title .greet .name span{
+        font-size: 30px;
+        margin-bottom: 10px;
+    }
+
+    .presentation .title .greet h2{
+        font-size: 30px;
+        margin-top: -10px;
+        -webkit-text-stroke: 2px transparent transparent;
+        color: blue;
+    }
+}
+
+@media (max-width: 1045px) {
+    .presentation .image{
+        display: none;
+    }
+
+    .presentation .title{
+        margin: 10rem auto -5rem 33rem;
+    }
+}
+
+@media (max-width: 954px) {
+    .presentation .title{
+        margin: 10rem auto -5rem 30rem;
+    }
+}
+
+@media (max-width: 954px) {
+    .presentation .title{
+        justify-content: center;
+        margin-left: auto;
+    }
+}
+
+@media (max-width: 740px) {
+    .hobbies .big-block .block h2{
+        font-size: 20px;
+    }
+    
+    .hobbies .big-block .block p{
+        font-size: 15px;
+    }
+
+    .presentation .title .greet h2{
+        font-size: 20px;
+        font-weight: 100;
+    }
+
+    .big-block{
+        margin: 10rem 2rem;
+    }
+
+    .skills{
+        margin: auto 2rem auto 2rem;
+    }
+}
+
+@media (max-width: 710px) {
+    nav .links{
+        display: none;
+    }
+}
+
+@media (max-width: 686px) {
+    .presentation .title .greet p{
+        display: none;
+    }   
+}
+
+@media (max-width: 573px) {
+    .skills ul li{
+        font-size: 12px;
+    } 
+}
+
+@media (max-width: 400px) {
+    .presentation .title .greet{
+        margin-left: -10px;
+    }
+
+    .skills{
+        margin-top: -7rem;
+    }
+
+    .skills h2{
+        font-size: 20px;
+    }
+
+    .skills ul{
+        display: block;
+        margin: auto 5rem;
+    }
+
+    .skills ul li i{
+        display: inline-flex;
+    }
+
+    .skills ul li{
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        margin-bottom: 10px;
+    }
+
+    .skills ul li:first-child{
+        margin-top: 10px;
+    }
+
+    .skills ul li:last-child{
+        margin-bottom: 20px;
+    }
 }
