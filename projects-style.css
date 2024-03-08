@@ -119,10 +119,6 @@ h1{
     font-size: 35px;
 }
 
-.project-block {
-    margin-bottom: 20rem;
-}
-
 /*Batman block*/
 
 .batman-block{
@@ -180,6 +176,10 @@ h1{
     margin-top: 30px;
 }
 
+
+.margin{
+    margin-bottom: 7rem;
+}
 
 /*Nav de abajo*/
 
@@ -381,6 +381,10 @@ h1{
 
     .navigation{
         display: flex;
+    }
+
+    .project-block:last-child {
+        margin-bottom: 20rem;
     }
 }
 
