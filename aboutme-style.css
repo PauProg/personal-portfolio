@@ -1,3 +1,5 @@
+/*Error en linea 305*/
+
 *{
     padding: 0;
     margin: 0;
@@ -299,15 +301,23 @@ nav .links a{
         margin-left: auto;
     }
 
+
+    /*Este bloque hace que cuando llega aqui, se crea un
+    espacio en blanco enorme en la pantalla*/
     .presentation{
-        margin: -175px -420px 0 -420px;
-        justify-content: center;
+        margin-top: -5rem;
     }
+
+
 }
 
 @media (max-width: 1300px) {
     .big-block{
         margin: 10rem 7rem 10rem 7rem;
+    }
+
+    .presentation{
+        margin: -5rem;
     }
 }
 
@@ -341,6 +351,10 @@ nav .links a{
         margin-bottom: 10px;
     }
 
+    .presentation{
+        margin: -10rem -10rem 4rem -10rem;
+    }
+
     .presentation .title .greet h2{
         font-size: 30px;
         margin-top: -10px;
@@ -354,12 +368,20 @@ nav .links a{
         display: none;
     }
 
+    .presentation{
+        margin-left: -24rem;
+    }
+
     .presentation .title{
         margin: 10rem auto -5rem 33rem;
     }
 }
 
 @media (max-width: 954px) {
+    .presentation{
+        margin: -10rem -10rem 4rem -10rem;
+    }
+
     .presentation .title{
         margin: 10rem auto -5rem 30rem;
     }
