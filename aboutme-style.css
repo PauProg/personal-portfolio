@@ -1,5 +1,3 @@
-/*Error en linea 305*/
-
 *{
     padding: 0;
     margin: 0;
@@ -252,6 +250,13 @@ nav .links a{
     color: #4854ff;
 }
 
+/*Responsive*/
+
+@media (max-width: 3000px) {
+    .presentation{
+        justify-content: center;
+    }
+}
 
 @media (max-width: 1630px) {
     .title .greet .hi{
